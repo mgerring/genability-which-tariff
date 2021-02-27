@@ -54,7 +54,6 @@ export default function Home() {
   }
 
   async function fetchTariffs() {
-    const today = new Date();
     const request = new restApis.GetTariffsRequest();
     request.lseId = selectedLse;
     request.zipCode = addressData.zipCode;
