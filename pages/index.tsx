@@ -103,9 +103,9 @@ export default function Home() {
             </Form>
           </Col>
         </Row>
-        <Row className="justify-content-center m-t-50">
+        <Row className="justify-content-center mt-5">
         {lseList &&
-          <Col>
+          <Col md="6">
             <ul className="list-group">
               {lseList.map((lse, idx) => 
                 <a 
@@ -115,15 +115,21 @@ export default function Home() {
                   onClick={() => setSelectedLse(lse.lseId)}
                   className={"list-group-item list-group-item-action " + (selectedLse == lse.lseId ? 'active' : '')}
                 >
-                  <img height={50} src={"https://cdn.genability.com/lses/"+ lse.lseId + ".png"} />
-                  {lse.name}
+                  <Row>
+                    <Col xs={4} className="text-center">
+                      <img style={{maxWidth:'100%',maxHeight:'50px'}} src={"https://cdn.genability.com/lses/"+ lse.lseId + ".png"} />
+                    </Col>
+                    <Col xs={8}>
+                      {lse.name}
+                    </Col>
+                  </Row>
                 </a>
               )}
             </ul>
           </Col>
         }
         {selectedLse &&
-          <Col>
+          <Col md="6">
             <ul className="list-group">
               {tariffList.map((tariff, idx) => 
                 <li 
