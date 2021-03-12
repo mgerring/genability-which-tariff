@@ -121,12 +121,12 @@ export default function Home() {
                   />
                 </Form.Group>
 
-                {lseList.length == 0 && <Button 
+                <Button 
                   type="submit"
                   className="mb-2 mr-sm-2"
                 >
                   Search
-                </Button>}
+                </Button>
                 {lseList.length > 0 && <Button
                   variant="secondary" 
                   type="reset"
