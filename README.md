@@ -4,12 +4,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
 
 ```bash
-npm run dev
+yarn install
 # or
+npm install
+```
+
+Then, create a file `.env.local` in the root of the project, and add your [Genability API credentials](https://developer.genability.com/quick-start/):
+
+```bash
+GEN_APP_ID= #Your Genability App ID here
+GEN_APP_KEY= #Your Genability App Key here
+```
+
+Finally, run the development server:
+
+```bash
 yarn dev
+# or
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
