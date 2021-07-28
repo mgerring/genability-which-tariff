@@ -1,3 +1,5 @@
+This is a sample project demonstrating how to use the [Genabiltiy JavaScript SDK](https://www.npmjs.com/package/@genability/api) for common use cases.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -14,21 +16,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The application includes a backend proxy, demonstrating how to keep Genability API credentials secure while using the JavaScript SDK on the frontend. This endpoint can be seen in `pages/api/genability-proxy/[...path].js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages, and are not published to the frontend. Never include your Genability API credentials in user-facing frontend code.
 
 ## Learn More
+
+To obtain Genability API credentials, [visit our Quick Start page](https://developer.genability.com/quick-start/).
+
+To learn more about the Genability JavaScript SDK, [see the SDK documentation](https://www.npmjs.com/package/@genability/api).
+
+To learn more about Genability's APIs, take a look at our [developer documentation](https://developer.genability.com/).
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
